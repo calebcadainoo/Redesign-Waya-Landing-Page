@@ -40,6 +40,7 @@
 .nav-logo{
 	width: 82px;
 	height: 32px;
+	margin-top: 4px;
 }
 
 .nav-right{
@@ -344,6 +345,12 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 999px){
+	.nav-right{
+		-ms-flex: 1;
+		flex: 1;
+		display: none;
+	}
+
 	.page-header .left-side{
 		padding: 10px;
 	}
