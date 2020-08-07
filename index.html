@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#f60686">
+	<meta name="msapplication-navbutton-color" content="#f60686">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#f60686">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- ADD SEO WHEN DONE -->
+
+	<title>WayaMoney &bull; Personal</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" >
+	<link rel="shortcut icon" type="image/png" href="ico/favicon.png" />
+	<link rel="stylesheet" href="css/modalcode.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="js/app.controllers.js"></script>
+</head>
+<body>
+
+	<!-- page default toggle -->
+	<div class="page-def-toggle-banner">
+		<div class="centroid page-def-toggle">
+			<div class="def-toggle page-def-toggle-selected">Personal</div>
+			<div class="def-toggle">Business</div>
+		</div>
+	</div>
+	<!-- end of page default toggle -->
+
+	<!-- page navigation -->
+	<div class="page-navbar">
+		<div class="centroid nav-container">
+			<!-- logo -->
+			<div class="nav-logo imgfx">
+				<img src="ico/logo.png" alt="WayaMoney Logo">
+			</div>
+			<!-- right navs -->
+			<div class="nav-right">
+				<ul class="nav-menus">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#benefits">Benefits</a></li>
+					<li><a href="#faqs">FAQs</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+					<li class="nav-div">
+						<div class="wbtn btn-border btn-signin" onclick="window.location.href='https://app.wayamoney.com/?view=signin';">
+							Log In
+						</div>
+					</li>
+					<li class="nav-div">
+						<div class="wbtn btn-border btn-signup" onclick="window.location.href='https://app.wayamoney.com/?view=signup';">
+							Sign Up
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of page navigation -->
+	
+	<!-- page header -->
+	<header class="centroid page-header">
+		<div class="left-side">
+			<div class="spacerB"></div>
+			<div class="spacerB"></div>
+			<h1 class="page-h1">Waya</h1>
+			<div class="waya-summary">
+				a multi-currency wallet application that allows a user to send money 
+				and/or make payments across Africa.
+			</div>
+			<div class="spacerA"></div>
+			<div class="waya-getstarted">
+				<a target="_blank" href="https://app.wayamoney.com/?view=signup">
+					<button class="wabtn trans btn-get-started">Get Started</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="right-side">
+			<div class="spacerA"></div>
+			<br>
+			<h2 class="page-h2">
+				Send or Receive Money Anytime Anywhere
+			</h2>
+			<div class="spacerA"></div>
+			<div class="currency-converter">
+				<!-- sender part -->
+				<div class="money-convert">
+					<label for="sender-money">You are sending</label>
+					<!-- wrapper -->
+					<div class="amount-and-currency">
+						<input class="wform-ctrl" type="text" name="sender-money" id="sender-money">
+						<select class="wform-ctrl" name="sender-currency" id="sender-currency">
+							<option value="GHS">GHS</option>
+							<option value="KES">KES</option>
+							<option value="NGN">NGN</option>
+						</select> 
+						<div class="sender-flag currency-flag cur-gh"></div>
+					</div>
+					<!-- end of wrapper -->
+				</div>
+
+				<!-- receiver part -->
+				<div class="money-convert">
+					<label for="sender-money">Recipient gets</label>
+					<!-- wrapper -->
+					<div class="amount-and-currency">
+						<input class="wform-ctrl" type="text" name="sender-money" id="sender-money">
+						<select class="wform-ctrl" name="recipient-currency" id="recipient-currency">
+							<option value="GHS">GHS</option>
+							<option value="KES" selected>KES</option>
+							<option value="NGN">NGN</option>
+						</select> 
+						<div class="recipient-flag currency-flag cur-ke"></div>
+					</div>
+				</div>
+
+				<!-- exchange rate part -->
+				<div class="money-convert">
+					<label class="exchange-rate">Exchange rate is 1 GHS = KES 18.76</label>
+				</div>
+		</div>
+	</header>
+	<!-- end of page header -->
+
+	<!-- waya platforms -->
+	<section class="centroid waya-platform-container">
+		<h4 class="page-h3">Waya is available as:</h4>
+		<br>
+		<aside class="waya-platform-box">
+			<!-- mobile app -->
+			<div class="waya-platform">
+				<!-- icon and title -->
+				<div class="platform-img trans imgfx">
+					<img src="img/platforms/mobile-app.jpg" alt="platform-type">
+				</div>
+				<!-- summary -->
+				<div class="platform-overlay">
+					<header class="platform-overlay-header">
+						<div class="platform-icon mobile-app"></div>
+						<div class="platform-title">Mobile App</div>
+					</header>
+					<div class="front_clrfx"></div>
+					<aside class="platform-summary">
+						Have to comfort of using WayaMoney to send and receive money using our mobile app.
+					</aside>
+				</div>
+			</div>
+
+			<!-- web app -->
+			<div class="waya-platform">
+				<!-- icon and title -->
+				<div class="platform-img trans ">
+					<img src="img/platforms/web-app.png" alt="platform-type">
+				</div>
+				<!-- summary -->
+				<div class="platform-overlay">
+					<header class="platform-overlay-header">
+						<div class="platform-icon web-app"></div>
+						<div class="platform-title">Web App</div>
+					</header>
+					<div class="front_clrfx"></div>
+					<aside class="platform-summary">
+						Incase you don't have WayaMoney installed on your mobile app, 
+						don't worry. You can use our Web App to do everything from anywhere.
+					</aside>
+				</div>
+			</div>
+
+			<!-- rest api -->
+			<div class="waya-platform">
+				<!-- icon and title -->
+				<div class="platform-img trans imgfx">
+					<img src="img/platforms/api.jpg" alt="platform-type">
+				</div>
+				<!-- summary -->
+				<div class="platform-overlay">
+					<header class="platform-overlay-header">
+						<div class="platform-icon rest-api"></div>
+						<div class="platform-title">REST API</div>
+					</header>
+					<div class="front_clrfx"></div>
+					<aside class="platform-summary">
+						Integrate WayaMoney into your mobile apps, web apps and platforms that require payment gateways
+					</aside>
+				</div>
+			</div>
+		</aside>
+	</section>
+	<!-- end of waya platforms -->
+
+	<!-- waya user types -->
+	<section class="centroid waya-container">
+		<h4 class="page-h3">Our user account types</h4>
+		<br>
+		
+	</section>
+	<!-- end of waya user types -->
+
+	<!-- waya user types -->
+	<section class="centroid waya-container">
+		<h4 class="page-h3">Digital wallet &amp; virtual accounts</h4>
+		<br>
+		
+	</section>
+	<!-- end of waya user types -->
+
+	<div class="spacerA"></div>
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+	<script src="js/bootstrapformhelpers.js"></script>
+</body>
+</html>
